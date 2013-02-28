@@ -1,0 +1,17 @@
+Source: nutcracker
+Section: contrib/web
+Priority: extra
+Maintainer: Damien Hardy <dhardy@viadeoteam.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/twitter/twemproxy
+Vcs-Git: git://github.com/twitter/twemproxy.git
+
+Package: nutcracker
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: fast, light-weight proxy for memcached and redis
+ twemproxy (pronounced "two-em-proxy"), aka nutcracker
+ is a fast and lightweight proxy for memcached and redis protocol.
+ It was primarily built to reduce the connection count
+ on the backend caching servers.
