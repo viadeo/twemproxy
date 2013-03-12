@@ -1,0 +1,4 @@
+# This file controls nutcracker running
+ENABLE_NUTCRACKER=no
+NUTCRACKER_USER="nobody"
+NUTCRACKER_OPTS="-d -c /etc/nutcracker/nutcracker.yml"
