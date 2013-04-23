@@ -32,6 +32,7 @@
     ACTION( HASH_FNV1A_32,      fnv1a_32      ) \
     ACTION( HASH_HSIEH,         hsieh         ) \
     ACTION( HASH_MURMUR,        murmur        ) \
+    ACTION( HASH_JAVA,          java          ) \
     ACTION( HASH_JENKINS,       jenkins       ) \
 
 #define DIST_CODEC(ACTION)                      \
@@ -63,6 +64,7 @@ uint32_t hash_fnv1a_64(const char *key, size_t key_length);
 uint32_t hash_fnv1_32(const char *key, size_t key_length);
 uint32_t hash_fnv1a_32(const char *key, size_t key_length);
 uint32_t hash_hsieh(const char *key, size_t key_length);
+uint32_t hash_java(const char *key, size_t length);
 uint32_t hash_jenkins(const char *key, size_t length);
 uint32_t hash_murmur(const char *key, size_t length);
 
