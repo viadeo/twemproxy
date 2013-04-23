@@ -21,9 +21,10 @@ static uint32_t JAVA_INIT = 0;
 static uint32_t JAVA_PRIME = 31;
 
 uint32_t
-hash_crc16(const char *key, size_t key_length)
+hash_java(const char *key, size_t key_length)
 {
   uint32_t hash = JAVA_INIT;
+  size_t x = 0;
 
   for (x = 0; x < key_length; x++) {
     hash *= JAVA_PRIME;
