@@ -31,5 +31,5 @@ hash_java(const char *key, size_t key_length)
     hash += (uint32_t)key[x];
   }
 
-  return hash
+  return hash;
 }
