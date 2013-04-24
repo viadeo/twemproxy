@@ -10,4 +10,9 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ 
+	dh $@
+
+override_dh_auto_configure:
+	autoreconf -fvi
+	dh_auto_configure
+	
