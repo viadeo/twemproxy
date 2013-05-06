@@ -17,19 +17,19 @@
 
 #include <nc_core.h>
 
-static uint32_t HASH_INIT = 0;
-static uint32_t HASH_PRIME = 31;
+static int32_t HASH_INIT = 0;
+static int32_t HASH_PRIME = 31;
 
 uint32_t
 hash_java(const char *key, size_t key_length)
 {
-  uint32_t hash = HASH_INIT;
+  int32_t hash = HASH_INIT;
   size_t x = 0;
 
   for (x = 0; x < key_length; x++) {
     hash *= HASH_PRIME;
-    hash += (uint32_t)key[x];
+    hash += (int32_t)key[x];
   }
 
-  return hash;
+  return hash > 0 ? (uint32_t) hash : (uint32_t) (hash * -1L);
 }
