@@ -14,6 +14,7 @@ libhashkit_a_SOURCES =		\
 	nc_crc32.c		\
 	nc_fnv.c		\
 	nc_hsieh.c		\
+	nc_java.c		\
 	nc_jenkins.c		\
 	nc_ketama.c		\
 	nc_md5.c		\
