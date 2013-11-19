@@ -1,3 +1,22 @@
+nutcracker (0.2.4a-6) next; urgency=low
+
+  * fix java hash for negative hash values (@miguel)
+
+ -- Antoine Guy <aguy@viadeoteam.com>  Mon, 06 May 2013 15:24:26 +0100
+
+nutcracker (0.2.4a-5) next; urgency=low
+
+  * Add init script (@aguy)
+
+ -- Antoine Guy <aguy@viadeoteam.com>  Fri, 03 May 2013 15:24:26 +0100
+
+
+nutcracker (0.2.4a-4) next; urgency=low
+
+  * Add Java hash (@miguel)
+
+ -- Antoine Guy <aguy@viadeoteam.com>  Tue, 22 Apr 2013 15:24:26 +0100
+
 nutcracker (0.2.4a-2) next; urgency=low
 
   * Initial release
